@@ -1,0 +1,100 @@
+{"level":"error","message":"Error loading vector store: Error: OpenAI or Azure OpenAI API key or Token Provider not found","timestamp":"2025-04-22T19:04:13.601Z"}
+{"level":"error","message":"Error loading vector store: Error: No vector store files found. Run initVectorStore.js first.","timestamp":"2025-04-22T19:06:31.726Z"}
+{"level":"info","message":"Successfully loaded vector store from /home/repos/xstchat/helpers/vector_store","timestamp":"2025-04-22T19:07:08.580Z"}
+{"level":"info","message":"Successfully loaded vector store from /home/repos/xstchat/helpers/vector_store","timestamp":"2025-04-22T19:23:40.569Z"}
+{"level":"info","message":"Successfully loaded vector store from /home/repos/xstchat/helpers/vector_store","timestamp":"2025-04-22T19:32:37.572Z"}
+{"level":"info","message":"Successfully loaded vector store from /home/repos/xstchat/helpers/vector_store","timestamp":"2025-04-22T19:43:03.191Z"}
+{"level":"info","message":"Successfully loaded vector store from /home/repos/xstchat/helpers/vector_store","timestamp":"2025-04-22T19:47:39.501Z"}
+{"level":"info","message":"Successfully loaded vector store from /home/repos/xstchat/helpers/vector_store","timestamp":"2025-04-22T19:56:41.197Z"}
+{"level":"info","message":"Loading documents from: /home/repos/xstchat/old/old-v2/helpers/modules","timestamp":"2025-04-22T20:11:41.674Z"}
+{"level":"info","message":"Loading and processing XML documents...","timestamp":"2025-04-22T20:11:41.677Z"}
+{"level":"info","message":"Loaded 0 documents","timestamp":"2025-04-22T20:11:41.681Z"}
+{"level":"info","message":"Split into 0 chunks for vectorization","timestamp":"2025-04-22T20:11:41.682Z"}
+{"level":"info","message":"Creating vector store...","timestamp":"2025-04-22T20:11:41.682Z"}
+{"level":"info","message":"Loading documents from: /home/repos/xstchat/helpers/modules","timestamp":"2025-04-22T20:15:44.798Z"}
+{"level":"info","message":"Loading and processing XML documents...","timestamp":"2025-04-22T20:15:44.801Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/03bb577b06c3b4eaea35c5924d7f2ee3.xml","timestamp":"2025-04-22T20:15:44.806Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/03bb577b06c3b4eaea35c5924d7f2ee3.xml","timestamp":"2025-04-22T20:15:44.807Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/0e84d15dc0133b7f690a5af4549d6054.xml","timestamp":"2025-04-22T20:15:44.817Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/0e84d15dc0133b7f690a5af4549d6054.xml","timestamp":"2025-04-22T20:15:44.817Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/11651c4c4740fd186e052a3b3a945ed4.xml","timestamp":"2025-04-22T20:15:44.818Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/11651c4c4740fd186e052a3b3a945ed4.xml","timestamp":"2025-04-22T20:15:44.818Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/14ce3c810b9cca2c989c2c37a1e68faa.xml","timestamp":"2025-04-22T20:15:44.819Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/14ce3c810b9cca2c989c2c37a1e68faa.xml","timestamp":"2025-04-22T20:15:44.820Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/16b3ca53333a303677793ab5d4c2bb4c.xml","timestamp":"2025-04-22T20:15:44.833Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/16b3ca53333a303677793ab5d4c2bb4c.xml","timestamp":"2025-04-22T20:15:44.833Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/197a8bc2847a40658a96bdf0943204fb.xml","timestamp":"2025-04-22T20:15:44.838Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/197a8bc2847a40658a96bdf0943204fb.xml","timestamp":"2025-04-22T20:15:44.838Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/1e3494f2b9d6b9fada4c9fa1b226d39c.xml","timestamp":"2025-04-22T20:15:44.839Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/1e3494f2b9d6b9fada4c9fa1b226d39c.xml","timestamp":"2025-04-22T20:15:44.839Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/2926371ff39f0164b1cd9816b56642e0.xml","timestamp":"2025-04-22T20:15:44.841Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/2926371ff39f0164b1cd9816b56642e0.xml","timestamp":"2025-04-22T20:15:44.841Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/4973aaf8d6aef72fedc5759006421a06.xml","timestamp":"2025-04-22T20:15:44.845Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/4973aaf8d6aef72fedc5759006421a06.xml","timestamp":"2025-04-22T20:15:44.845Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/5840780068d8270483daa56f45068c23.xml","timestamp":"2025-04-22T20:15:44.845Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/5840780068d8270483daa56f45068c23.xml","timestamp":"2025-04-22T20:15:44.845Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/657093a08aec4ec05735cd4f260230dd.xml","timestamp":"2025-04-22T20:15:44.846Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/657093a08aec4ec05735cd4f260230dd.xml","timestamp":"2025-04-22T20:15:44.846Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/66c69cd84def031b27c8edaa708fd295.xml","timestamp":"2025-04-22T20:15:44.847Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/66c69cd84def031b27c8edaa708fd295.xml","timestamp":"2025-04-22T20:15:44.847Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/7153aaadd5b9d4c29269a54d15855a29.xml","timestamp":"2025-04-22T20:15:44.872Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/7153aaadd5b9d4c29269a54d15855a29.xml","timestamp":"2025-04-22T20:15:44.872Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/734059540d09083df67a1299bd814164.xml","timestamp":"2025-04-22T20:15:44.874Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/734059540d09083df67a1299bd814164.xml","timestamp":"2025-04-22T20:15:44.874Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/775daf4c074cd71d1367a9064472ea32.xml","timestamp":"2025-04-22T20:15:44.875Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/775daf4c074cd71d1367a9064472ea32.xml","timestamp":"2025-04-22T20:15:44.875Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/7f385ed42ac8c24ac8c46513ced4eda1.xml","timestamp":"2025-04-22T20:15:44.877Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/7f385ed42ac8c24ac8c46513ced4eda1.xml","timestamp":"2025-04-22T20:15:44.877Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/8170a2177cf225b406594a8b9a475f43.xml","timestamp":"2025-04-22T20:15:44.878Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/8170a2177cf225b406594a8b9a475f43.xml","timestamp":"2025-04-22T20:15:44.878Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/842abb022b49064f1189bce4002dd47c.xml","timestamp":"2025-04-22T20:15:44.879Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/842abb022b49064f1189bce4002dd47c.xml","timestamp":"2025-04-22T20:15:44.879Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/858822df0de4731f0251a29f478bb4fe.xml","timestamp":"2025-04-22T20:15:44.880Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/858822df0de4731f0251a29f478bb4fe.xml","timestamp":"2025-04-22T20:15:44.880Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/8d84c49eac460e717670cef30a1a9d71.xml","timestamp":"2025-04-22T20:15:44.881Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/8d84c49eac460e717670cef30a1a9d71.xml","timestamp":"2025-04-22T20:15:44.881Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/951b7e865d755b690da6dd65d607f1f4.xml","timestamp":"2025-04-22T20:15:44.882Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/951b7e865d755b690da6dd65d607f1f4.xml","timestamp":"2025-04-22T20:15:44.882Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/96eb408d709b2c232961633435d38ed0.xml","timestamp":"2025-04-22T20:15:44.882Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/96eb408d709b2c232961633435d38ed0.xml","timestamp":"2025-04-22T20:15:44.883Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/a1322b96305112c93d2daed6f3d09c69.xml","timestamp":"2025-04-22T20:15:44.887Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/a1322b96305112c93d2daed6f3d09c69.xml","timestamp":"2025-04-22T20:15:44.887Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/bef49bafff352294f41a33c1b1198d57.xml","timestamp":"2025-04-22T20:15:44.889Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/bef49bafff352294f41a33c1b1198d57.xml","timestamp":"2025-04-22T20:15:44.889Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/c021845d160ac16025cc4873af1a129e.xml","timestamp":"2025-04-22T20:15:44.890Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/c021845d160ac16025cc4873af1a129e.xml","timestamp":"2025-04-22T20:15:44.890Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/c189e489391e222fadc5e964a67b7020.xml","timestamp":"2025-04-22T20:15:44.890Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/c189e489391e222fadc5e964a67b7020.xml","timestamp":"2025-04-22T20:15:44.890Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/c22b782b7323c7ff63b0bd9789f7ca19.xml","timestamp":"2025-04-22T20:15:44.891Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/c22b782b7323c7ff63b0bd9789f7ca19.xml","timestamp":"2025-04-22T20:15:44.892Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/c647e188cf133f408263eeed9243a7e0.xml","timestamp":"2025-04-22T20:15:44.892Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/c647e188cf133f408263eeed9243a7e0.xml","timestamp":"2025-04-22T20:15:44.892Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/cff2b719c85d9c4955deff09df67df0e.xml","timestamp":"2025-04-22T20:15:44.893Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/cff2b719c85d9c4955deff09df67df0e.xml","timestamp":"2025-04-22T20:15:44.893Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/d7d79066d1b8a3651bf769fe0bcf7d82.xml","timestamp":"2025-04-22T20:15:44.893Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/d7d79066d1b8a3651bf769fe0bcf7d82.xml","timestamp":"2025-04-22T20:15:44.893Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/d815de4f079593ff301f8abf04a18a63.xml","timestamp":"2025-04-22T20:15:44.894Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/d815de4f079593ff301f8abf04a18a63.xml","timestamp":"2025-04-22T20:15:44.894Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/e3aa49394c5440cfe6da177136a7df42.xml","timestamp":"2025-04-22T20:15:44.895Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/e3aa49394c5440cfe6da177136a7df42.xml","timestamp":"2025-04-22T20:15:44.895Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/e805c6ee6770033affd0cac5fb37b45a.xml","timestamp":"2025-04-22T20:15:44.896Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/e805c6ee6770033affd0cac5fb37b45a.xml","timestamp":"2025-04-22T20:15:44.896Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/e83fadd8e50892bc5241168880dafb51.xml","timestamp":"2025-04-22T20:15:44.897Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/e83fadd8e50892bc5241168880dafb51.xml","timestamp":"2025-04-22T20:15:44.897Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/e872ebac37616a5fa20e963768fdb7fd.xml","timestamp":"2025-04-22T20:15:44.898Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/e872ebac37616a5fa20e963768fdb7fd.xml","timestamp":"2025-04-22T20:15:44.898Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/f133866ba6b7fe5315ec4084faf30294.xml","timestamp":"2025-04-22T20:15:44.901Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/f133866ba6b7fe5315ec4084faf30294.xml","timestamp":"2025-04-22T20:15:44.901Z"}
+{"level":"info","message":"Creating loader for: /home/repos/xstchat/helpers/modules/febf7a8e3bef167c1fc9a2ccdcb0ffa2.xml","timestamp":"2025-04-22T20:15:44.902Z"}
+{"level":"info","message":"Processing XML file: /home/repos/xstchat/helpers/modules/febf7a8e3bef167c1fc9a2ccdcb0ffa2.xml","timestamp":"2025-04-22T20:15:44.902Z"}
+{"level":"info","message":"Loaded 984 documents","timestamp":"2025-04-22T20:15:44.902Z"}
+{"level":"info","message":"Split into 984 chunks for vectorization","timestamp":"2025-04-22T20:15:44.923Z"}
+{"level":"info","message":"Creating vector store...","timestamp":"2025-04-22T20:15:44.924Z"}
+{"level":"info","message":"Vector store successfully saved to /home/repos/xstchat/helpers/vector_store","timestamp":"2025-04-22T20:15:53.867Z"}
+{"level":"info","message":"Vector store initialization completed successfully","timestamp":"2025-04-22T20:15:53.868Z"}
+{"level":"info","message":"Successfully loaded vector store from /home/repos/xstchat/helpers/vector_store","timestamp":"2025-04-22T20:17:57.016Z"}
+{"level":"info","message":"Successfully loaded vector store from /home/repos/xstchat/helpers/vector_store","timestamp":"2025-04-22T20:23:48.065Z"}
+{"level":"info","message":"Successfully loaded vector store from /home/repos/xstchat/helpers/vector_store","timestamp":"2025-04-22T20:25:31.618Z"}
+{"level":"info","message":"Successfully loaded vector store from /home/repos/xstchat/helpers/vector_store","timestamp":"2025-04-22T20:30:10.616Z"}
+{"level":"info","message":"Successfully loaded vector store from /home/repos/xstchat/helpers/vector_store","timestamp":"2025-04-22T20:30:42.845Z"}
+{"level":"info","message":"Successfully loaded vector store from /home/repos/xstchat/helpers/vector_store","timestamp":"2025-04-22T20:33:21.039Z"}

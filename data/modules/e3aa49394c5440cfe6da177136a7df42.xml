@@ -1,0 +1,118 @@
+<xqdoc:xqdoc xmlns:xqdoc="http://www.xqdoc.org/1.0">
+    <xqdoc:control>
+        <xqdoc:date>2025-04-10T20:48:27.37+02:00</xqdoc:date>
+        <xqdoc:location>java:org.exist.xquery.modules.cache.CacheModule</xqdoc:location>
+    </xqdoc:control>
+    <xqdoc:module type="library">
+        <xqdoc:uri>http://exist-db.org/xquery/cache</xqdoc:uri>
+        <xqdoc:name>cache</xqdoc:name>
+        <xqdoc:comment>
+            <xqdoc:description>A module for accessing global caches for sharing data between concurrent sessions</xqdoc:description>
+        </xqdoc:comment>
+    </xqdoc:module>
+    <xqdoc:functions>
+        <xqdoc:function>
+            <xqdoc:name>cache:create</xqdoc:name>
+            <xqdoc:signature>cache:create($cache-name as xs:string, $config as map(*)) as xs:boolean</xqdoc:signature>
+            <xqdoc:comment>
+                <xqdoc:description>Explicitly create a cache with a specific configuration</xqdoc:description>
+                <xqdoc:param>$cache-name The name of the cache</xqdoc:param>
+                <xqdoc:param>$config A map with configuration for the cache. At present cache LRU and permission groups may be specified, for operations on the cache. `maximumSize` is optional and specifies the maximum number of entries. `expireAfterAccess` is optional and specifies the expiry period for infrequently accessed entries (in milliseconds). If a permission group is not specified for an operation, then permissions are not checked for that operation. Should have the format: map { "maximumSize": 1000, "expireAfterAccess": 120000, "permissions": map { "put-group": "group1", "get-group": "group2", "remove-group": "group3", "clear-group": "group4"} }</xqdoc:param>
+                <xqdoc:return>xs:boolean : true if the cache was created, false if the cache already exists</xqdoc:return>
+            </xqdoc:comment>
+        </xqdoc:function>
+        <xqdoc:function>
+            <xqdoc:name>cache:names</xqdoc:name>
+            <xqdoc:signature>cache:names() as xs:string*</xqdoc:signature>
+            <xqdoc:comment>
+                <xqdoc:description>Get the names of all current caches</xqdoc:description>
+                <xqdoc:return>xs:string* : The names of all caches currently in use.</xqdoc:return>
+            </xqdoc:comment>
+        </xqdoc:function>
+        <xqdoc:function>
+            <xqdoc:name>cache:put</xqdoc:name>
+            <xqdoc:signature>cache:put($cache-name as xs:string, $key as xs:anyType+, $value as item()*) as item()*</xqdoc:signature>
+            <xqdoc:comment>
+                <xqdoc:description>Put data with a key into the identified cache. Returns the previous value associated with the key</xqdoc:description>
+                <xqdoc:param>$cache-name The name of the cache</xqdoc:param>
+                <xqdoc:param>$key+ The key</xqdoc:param>
+                <xqdoc:param>$value* The value</xqdoc:param>
+                <xqdoc:return>item()* : The previous value associated with the key</xqdoc:return>
+            </xqdoc:comment>
+        </xqdoc:function>
+        <xqdoc:function>
+            <xqdoc:name>cache:list</xqdoc:name>
+            <xqdoc:signature>cache:list($cache-name as xs:string, $keys as xs:anyType*) as item()*</xqdoc:signature>
+            <xqdoc:comment>
+                <xqdoc:description>List all values (for the associated keys) stored in a cache.</xqdoc:description>
+                <xqdoc:param>$cache-name The name of the cache</xqdoc:param>
+                <xqdoc:param>$keys* The keys, if none are specified, all values are returned</xqdoc:param>
+                <xqdoc:return>item()* : The values associated with the keys</xqdoc:return>
+            </xqdoc:comment>
+        </xqdoc:function>
+        <xqdoc:function>
+            <xqdoc:name>cache:keys</xqdoc:name>
+            <xqdoc:signature>cache:keys($cache-name as xs:string) as xs:string*</xqdoc:signature>
+            <xqdoc:comment>
+                <xqdoc:description>List all keys stored in a cache. Note this operation is expensive.</xqdoc:description>
+                <xqdoc:param>$cache-name The name of the cache</xqdoc:param>
+                <xqdoc:return>xs:string* : The keys in the cache. Note these will be returned in serialized string form, as that is used internally.</xqdoc:return>
+            </xqdoc:comment>
+        </xqdoc:function>
+        <xqdoc:function>
+            <xqdoc:name>cache:get</xqdoc:name>
+            <xqdoc:signature>cache:get($cache-name as xs:string, $key as xs:anyType+) as item()*</xqdoc:signature>
+            <xqdoc:comment>
+                <xqdoc:description>Get data from identified global cache by key</xqdoc:description>
+                <xqdoc:param>$cache-name The name of the cache</xqdoc:param>
+                <xqdoc:param>$key+ The key</xqdoc:param>
+                <xqdoc:return>item()* : The value associated with the key</xqdoc:return>
+            </xqdoc:comment>
+        </xqdoc:function>
+        <xqdoc:function>
+            <xqdoc:name>cache:remove</xqdoc:name>
+            <xqdoc:signature>cache:remove($cache-name as xs:string, $key as xs:anyType+) as item()*</xqdoc:signature>
+            <xqdoc:comment>
+                <xqdoc:description>Remove data from the identified cache by the key. Returns the value that was previously associated with key</xqdoc:description>
+                <xqdoc:param>$cache-name The name of the cache</xqdoc:param>
+                <xqdoc:param>$key+ The key</xqdoc:param>
+                <xqdoc:return>item()* : The value that was previously associated with the key</xqdoc:return>
+            </xqdoc:comment>
+        </xqdoc:function>
+        <xqdoc:function>
+            <xqdoc:name>cache:clear</xqdoc:name>
+            <xqdoc:signature>cache:clear() as empty-sequence()</xqdoc:signature>
+            <xqdoc:comment>
+                <xqdoc:description>Clears all key/values from either all caches or the named cache</xqdoc:description>
+                <xqdoc:return>empty-sequence()</xqdoc:return>
+            </xqdoc:comment>
+        </xqdoc:function>
+        <xqdoc:function>
+            <xqdoc:name>cache:clear</xqdoc:name>
+            <xqdoc:signature>cache:clear($cache-name as xs:string) as empty-sequence()</xqdoc:signature>
+            <xqdoc:comment>
+                <xqdoc:description>Clears all key/values from either all caches or the named cache</xqdoc:description>
+                <xqdoc:param>$cache-name The name of the cache</xqdoc:param>
+                <xqdoc:return>empty-sequence()</xqdoc:return>
+            </xqdoc:comment>
+        </xqdoc:function>
+        <xqdoc:function>
+            <xqdoc:name>cache:cleanup</xqdoc:name>
+            <xqdoc:signature>cache:cleanup($cache-name as xs:string) as empty-sequence()</xqdoc:signature>
+            <xqdoc:comment>
+                <xqdoc:description>Eviction policy work of the cache is performed asynchronously. Performs any pending maintenance operations needed by the cache, on the current thread. Typically not needed by users, and only used for testing scenarios. Requires 'clear' permissions.</xqdoc:description>
+                <xqdoc:param>$cache-name The name of the cache</xqdoc:param>
+                <xqdoc:return>empty-sequence()</xqdoc:return>
+            </xqdoc:comment>
+        </xqdoc:function>
+        <xqdoc:function>
+            <xqdoc:name>cache:destroy</xqdoc:name>
+            <xqdoc:signature>cache:destroy($cache-name as xs:string) as empty-sequence()</xqdoc:signature>
+            <xqdoc:comment>
+                <xqdoc:description>Destroys a cache entirely</xqdoc:description>
+                <xqdoc:param>$cache-name The name of the cache</xqdoc:param>
+                <xqdoc:return>empty-sequence()</xqdoc:return>
+            </xqdoc:comment>
+        </xqdoc:function>
+    </xqdoc:functions>
+</xqdoc:xqdoc>

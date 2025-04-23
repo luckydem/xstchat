@@ -1,0 +1,150 @@
+[
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/backups&location=java:org.exist.backup.xquery.BackupModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/bef49bafff352294f41a33c1b1198d57.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/cache&location=java:org.exist.xquery.modules.cache.CacheModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/e3aa49394c5440cfe6da177136a7df42.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/compression&location=java:org.exist.xquery.modules.compression.CompressionModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/03bb577b06c3b4eaea35c5924d7f2ee3.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/contentextraction&location=java:org.exist.contentextraction.xquery.ContentExtractionModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/e805c6ee6770033affd0cac5fb37b45a.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/counter&location=java:org.exist.xquery.modules.counter.CounterModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/4973aaf8d6aef72fedc5759006421a06.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/cqlparser&location=java:org.exist.xquery.modules.cqlparser.CQLParserModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/11651c4c4740fd186e052a3b3a945ed4.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/file&location=java:org.exist.xquery.modules.file.FileModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/7153aaadd5b9d4c29269a54d15855a29.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/image&location=java:org.exist.xquery.modules.image.ImageModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/c22b782b7323c7ff63b0bd9789f7ca19.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/inspection&location=java:org.exist.xquery.functions.inspect.InspectionModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/c647e188cf133f408263eeed9243a7e0.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/jndi&location=java:org.exist.xquery.modules.jndi.JNDIModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/197a8bc2847a40658a96bdf0943204fb.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/lucene&location=java:org.exist.xquery.modules.lucene.LuceneModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/96eb408d709b2c232961633435d38ed0.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/mail&location=java:org.exist.xquery.modules.mail.MailModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/7f385ed42ac8c24ac8c46513ced4eda1.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/ngram&location=java:org.exist.xquery.modules.ngram.NGramModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/1e3494f2b9d6b9fada4c9fa1b226d39c.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/persistentlogin&location=java:org.exist.xquery.modules.persistentlogin.PersistentLoginModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/5840780068d8270483daa56f45068c23.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/process&location=java:org.exist.xquery.modules.process.ProcessModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/cff2b719c85d9c4955deff09df67df0e.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/range&location=java:org.exist.xquery.modules.range.RangeIndexModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/c189e489391e222fadc5e964a67b7020.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/repo&location=java:org.exist.xquery.modules.expathrepo.ExpathPackageModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/858822df0de4731f0251a29f478bb4fe.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/request&location=java:org.exist.xquery.functions.request.RequestModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/775daf4c074cd71d1367a9064472ea32.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/response&location=java:org.exist.xquery.functions.response.ResponseModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/e83fadd8e50892bc5241168880dafb51.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/scheduler&location=java:org.exist.xquery.modules.scheduler.SchedulerModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/842abb022b49064f1189bce4002dd47c.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/securitymanager&location=java:org.exist.xquery.functions.securitymanager.SecurityManagerModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/2926371ff39f0164b1cd9816b56642e0.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/session&location=java:org.exist.xquery.functions.session.SessionModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/f133866ba6b7fe5315ec4084faf30294.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/simple-ql&location=java:org.exist.xquery.modules.simpleql.SimpleQLModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/febf7a8e3bef167c1fc9a2ccdcb0ffa2.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/sort&location=java:org.exist.xquery.modules.sort.SortModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/d7d79066d1b8a3651bf769fe0bcf7d82.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/sql&location=java:org.exist.xquery.modules.sql.SQLModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/951b7e865d755b690da6dd65d607f1f4.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/system&location=java:org.exist.xquery.functions.system.SystemModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/16b3ca53333a303677793ab5d4c2bb4c.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/transform&location=java:org.exist.xquery.functions.transform.TransformModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/8170a2177cf225b406594a8b9a475f43.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/util&location=java:org.exist.xquery.functions.util.UtilModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/14ce3c810b9cca2c989c2c37a1e68faa.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/validation&location=java:org.exist.xquery.functions.validation.ValidationModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/d815de4f079593ff301f8abf04a18a63.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/xmldb&location=java:org.exist.xquery.functions.xmldb.XMLDBModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/e872ebac37616a5fa20e963768fdb7fd.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/xmldiff&location=java:org.exist.xquery.modules.xmldiff.XmlDiffModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/0e84d15dc0133b7f690a5af4549d6054.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/xqdoc&location=java:org.exist.xqdoc.xquery.XQDocModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/734059540d09083df67a1299bd814164.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://exist-db.org/xquery/xslfo&location=java:org.exist.xquery.modules.xslfo.XSLFOModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/c021845d160ac16025cc4873af1a129e.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://www.w3.org/2005/xpath-functions&location=java:org.exist.xquery.functions.fn.FnModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/66c69cd84def031b27c8edaa708fd295.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://www.w3.org/2005/xpath-functions/array&location=java:org.exist.xquery.functions.array.ArrayModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/a1322b96305112c93d2daed6f3d09c69.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://www.w3.org/2005/xpath-functions/map&location=java:org.exist.xquery.functions.map.MapModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/8d84c49eac460e717670cef30a1a9d71.xml"
+    },
+    {
+        "page_url": "http://localhost:8080/exist/apps/fundocs/view.html?uri=http://www.w3.org/2005/xpath-functions/math&location=java:org.exist.xquery.functions.math.MathModule",
+        "xml_url": "https://exist-db.org/exist/apps/fundocs/data/657093a08aec4ec05735cd4f260230dd.xml"
+    }
+]

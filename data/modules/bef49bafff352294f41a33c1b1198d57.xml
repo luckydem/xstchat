@@ -1,0 +1,34 @@
+<xqdoc:xqdoc xmlns:xqdoc="http://www.xqdoc.org/1.0">
+    <xqdoc:control>
+        <xqdoc:date>2025-04-10T20:48:27.37+02:00</xqdoc:date>
+        <xqdoc:location>java:org.exist.backup.xquery.BackupModule</xqdoc:location>
+    </xqdoc:control>
+    <xqdoc:module type="library">
+        <xqdoc:uri>http://exist-db.org/xquery/backups</xqdoc:uri>
+        <xqdoc:name>backups</xqdoc:name>
+        <xqdoc:comment>
+            <xqdoc:description>A module for access to database backups available on the server file system</xqdoc:description>
+        </xqdoc:comment>
+    </xqdoc:module>
+    <xqdoc:functions>
+        <xqdoc:function>
+            <xqdoc:name>backups:list</xqdoc:name>
+            <xqdoc:signature>backups:list($directory as xs:string) as node()</xqdoc:signature>
+            <xqdoc:comment>
+                <xqdoc:description>Returns an XML fragment listing all eXist backups found in a specified backup directory.</xqdoc:description>
+                <xqdoc:param>$directory The path to the directory to show the list of backups on.</xqdoc:param>
+                <xqdoc:return>node() : an XML fragment listing all eXist backups found in the specified backup directory: &lt;directory&gt; &lt;backup file="filename"&gt; &lt;key&gt;value&lt;/key&gt;&lt;key&gt;value&lt;/key&gt;&lt;/backup&gt; &lt;backup file="filename"&gt; &lt;key&gt;value&lt;/key&gt;&lt;key&gt;value&lt;/key&gt;&lt;/backup&gt; &lt;/directory&gt; Where key is a property name and value is a property value for the given .zip file.</xqdoc:return>
+            </xqdoc:comment>
+        </xqdoc:function>
+        <xqdoc:function>
+            <xqdoc:name>backups:retrieve</xqdoc:name>
+            <xqdoc:signature>backups:retrieve($directory as xs:string, $name as xs:string) as item()</xqdoc:signature>
+            <xqdoc:comment>
+                <xqdoc:description>Retrieves a zipped backup archive, $name, and directly streams it to the HTTP response. For security reasons, the function will only read .zip files in the specified directory, $directory.</xqdoc:description>
+                <xqdoc:param>$directory The path to the directory where the backup file is located.</xqdoc:param>
+                <xqdoc:param>$name The name of the file to retrieve.</xqdoc:param>
+                <xqdoc:return>item()</xqdoc:return>
+            </xqdoc:comment>
+        </xqdoc:function>
+    </xqdoc:functions>
+</xqdoc:xqdoc>

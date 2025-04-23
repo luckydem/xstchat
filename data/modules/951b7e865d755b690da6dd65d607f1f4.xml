@@ -1,0 +1,130 @@
+<xqdoc:xqdoc xmlns:xqdoc="http://www.xqdoc.org/1.0">
+    <xqdoc:control>
+        <xqdoc:date>2025-04-10T20:48:27.37+02:00</xqdoc:date>
+        <xqdoc:location>java:org.exist.xquery.modules.sql.SQLModule</xqdoc:location>
+    </xqdoc:control>
+    <xqdoc:module type="library">
+        <xqdoc:uri>http://exist-db.org/xquery/sql</xqdoc:uri>
+        <xqdoc:name>sql</xqdoc:name>
+        <xqdoc:comment>
+            <xqdoc:description>A module for performing SQL queries against Databases, returning XML representations of the result sets.</xqdoc:description>
+        </xqdoc:comment>
+    </xqdoc:module>
+    <xqdoc:functions>
+        <xqdoc:function>
+            <xqdoc:name>sql:get-connection</xqdoc:name>
+            <xqdoc:signature>sql:get-connection($driver-classname as xs:string, $url as xs:string) as xs:long?</xqdoc:signature>
+            <xqdoc:comment>
+                <xqdoc:description>Opens a connection to a SQL Database</xqdoc:description>
+                <xqdoc:param>$driver-classname The JDBC driver classname</xqdoc:param>
+                <xqdoc:param>$url The JDBC connection URL</xqdoc:param>
+                <xqdoc:return>xs:long? : an xs:long representing the connection handle. The connection will be closed (or returned to the pool) automatically when the calling XQuery finishes execution, if you need to return it sooner you can call sql:close-connection#1</xqdoc:return>
+            </xqdoc:comment>
+        </xqdoc:function>
+        <xqdoc:function>
+            <xqdoc:name>sql:get-connection</xqdoc:name>
+            <xqdoc:signature>sql:get-connection($driver-classname as xs:string, $url as xs:string, $properties as element()?) as xs:long?</xqdoc:signature>
+            <xqdoc:comment>
+                <xqdoc:description>Opens a connection to a SQL Database</xqdoc:description>
+                <xqdoc:param>$driver-classname The JDBC driver classname</xqdoc:param>
+                <xqdoc:param>$url The JDBC connection URL</xqdoc:param>
+                <xqdoc:param>$properties? The JDBC database connection properties in the form &lt;properties&gt;&lt;property name="" value=""/&gt;&lt;/properties&gt;.</xqdoc:param>
+                <xqdoc:return>xs:long? : an xs:long representing the connection handle. The connection will be closed (or returned to the pool) automatically when the calling XQuery finishes execution, if you need to return it sooner you can call sql:close-connection#1</xqdoc:return>
+            </xqdoc:comment>
+        </xqdoc:function>
+        <xqdoc:function>
+            <xqdoc:name>sql:get-connection</xqdoc:name>
+            <xqdoc:signature>sql:get-connection($driver-classname as xs:string, $url as xs:string, $username as xs:string, $password as xs:string) as xs:long?</xqdoc:signature>
+            <xqdoc:comment>
+                <xqdoc:description>Opens a connection to a SQL Database</xqdoc:description>
+                <xqdoc:param>$driver-classname The JDBC driver classname</xqdoc:param>
+                <xqdoc:param>$url The JDBC connection URL</xqdoc:param>
+                <xqdoc:param>$username The SQL database username</xqdoc:param>
+                <xqdoc:param>$password The SQL database password</xqdoc:param>
+                <xqdoc:return>xs:long? : an xs:long representing the connection handle. The connection will be closed (or returned to the pool) automatically when the calling XQuery finishes execution, if you need to return it sooner you can call sql:close-connection#1</xqdoc:return>
+            </xqdoc:comment>
+        </xqdoc:function>
+        <xqdoc:function>
+            <xqdoc:name>sql:get-connection-from-pool</xqdoc:name>
+            <xqdoc:signature>sql:get-connection-from-pool($pool-name as xs:string) as xs:long?</xqdoc:signature>
+            <xqdoc:comment>
+                <xqdoc:description>Retrieves a connection to a SQL Database from a connection pool</xqdoc:description>
+                <xqdoc:param>$pool-name The connection pool name (as configured in conf.xml)</xqdoc:param>
+                <xqdoc:return>xs:long? : an xs:long representing the connection handle. The connection will be closed (or returned to the pool) automatically when the calling XQuery finishes execution, if you need to return it sooner you can call sql:close-connection#1</xqdoc:return>
+            </xqdoc:comment>
+        </xqdoc:function>
+        <xqdoc:function>
+            <xqdoc:name>sql:get-connection-from-pool</xqdoc:name>
+            <xqdoc:signature>sql:get-connection-from-pool($pool-name as xs:string, $username as xs:string, $password as xs:string) as xs:long?</xqdoc:signature>
+            <xqdoc:comment>
+                <xqdoc:description>Retrieves a connection to a SQL Database from a connection pool</xqdoc:description>
+                <xqdoc:param>$pool-name The connection pool name (as configured in conf.xml)</xqdoc:param>
+                <xqdoc:param>$username The SQL database username</xqdoc:param>
+                <xqdoc:param>$password The SQL database password</xqdoc:param>
+                <xqdoc:return>xs:long? : an xs:long representing the connection handle. The connection will be closed (or returned to the pool) automatically when the calling XQuery finishes execution, if you need to return it sooner you can call sql:close-connection#1</xqdoc:return>
+            </xqdoc:comment>
+        </xqdoc:function>
+        <xqdoc:function>
+            <xqdoc:name>sql:close-connection</xqdoc:name>
+            <xqdoc:signature>sql:close-connection($connection-handle as xs:long) as xs:boolean</xqdoc:signature>
+            <xqdoc:comment>
+                <xqdoc:description>Closes a connection to a SQL Database, or if the connection was taken from a connection pool then it is returned to the pool</xqdoc:description>
+                <xqdoc:param>$connection-handle an xs:long representing the connection handle</xqdoc:param>
+                <xqdoc:return>xs:boolean : true if the connection was closed, false if there was no such connection</xqdoc:return>
+            </xqdoc:comment>
+        </xqdoc:function>
+        <xqdoc:function>
+            <xqdoc:name>sql:get-jndi-connection</xqdoc:name>
+            <xqdoc:signature>sql:get-jndi-connection($jndi-name as xs:string) as xs:long?</xqdoc:signature>
+            <xqdoc:comment>
+                <xqdoc:description>Opens a connection to a SQL Database.</xqdoc:description>
+                <xqdoc:param>$jndi-name The JNDI name</xqdoc:param>
+                <xqdoc:return>xs:long? : an xs:long representing the connection handle</xqdoc:return>
+            </xqdoc:comment>
+        </xqdoc:function>
+        <xqdoc:function>
+            <xqdoc:name>sql:get-jndi-connection</xqdoc:name>
+            <xqdoc:signature>sql:get-jndi-connection($jndi-name as xs:string, $username as xs:string, $password as xs:string) as xs:long?</xqdoc:signature>
+            <xqdoc:comment>
+                <xqdoc:description>Opens a connection to a SQL Database.</xqdoc:description>
+                <xqdoc:param>$jndi-name The JNDI name</xqdoc:param>
+                <xqdoc:param>$username The username</xqdoc:param>
+                <xqdoc:param>$password The password</xqdoc:param>
+                <xqdoc:return>xs:long? : an xs:long representing the connection handle</xqdoc:return>
+            </xqdoc:comment>
+        </xqdoc:function>
+        <xqdoc:function>
+            <xqdoc:name>sql:execute</xqdoc:name>
+            <xqdoc:signature>sql:execute($connection-handle as xs:long, $sql-statement as xs:string, $make-node-from-column-name as xs:boolean) as element()?</xqdoc:signature>
+            <xqdoc:comment>
+                <xqdoc:description>Executes a prepared SQL statement against a SQL db.</xqdoc:description>
+                <xqdoc:param>$connection-handle The connection handle</xqdoc:param>
+                <xqdoc:param>$sql-statement The SQL statement</xqdoc:param>
+                <xqdoc:param>$make-node-from-column-name The flag that indicates whether the xml nodes should be formed from the column names (in this mode a space in a Column Name will be replaced by an underscore!)</xqdoc:param>
+                <xqdoc:return>element()? : the results</xqdoc:return>
+            </xqdoc:comment>
+        </xqdoc:function>
+        <xqdoc:function>
+            <xqdoc:name>sql:execute</xqdoc:name>
+            <xqdoc:signature>sql:execute($connection-handle as xs:long, $statement-handle as xs:long, $parameters as element()?, $make-node-from-column-name as xs:boolean) as element()?</xqdoc:signature>
+            <xqdoc:comment>
+                <xqdoc:description>Executes a prepared SQL statement against a SQL db.</xqdoc:description>
+                <xqdoc:param>$connection-handle The connection handle</xqdoc:param>
+                <xqdoc:param>$statement-handle The prepared statement handle</xqdoc:param>
+                <xqdoc:param>$parameters? Parameters for the prepared statement. e.g. &lt;sql:parameters&gt;&lt;sql:param sql:type="long"&gt;1234&lt;/sql:param&gt;&lt;sql:param sql:type="varchar"&gt;&lt;sql:null/&gt;&lt;/sql:param&gt;&lt;/sql:parameters&gt;</xqdoc:param>
+                <xqdoc:param>$make-node-from-column-name The flag that indicates whether the xml nodes should be formed from the column names (in this mode a space in a Column Name will be replaced by an underscore!)</xqdoc:param>
+                <xqdoc:return>element()? : the results</xqdoc:return>
+            </xqdoc:comment>
+        </xqdoc:function>
+        <xqdoc:function>
+            <xqdoc:name>sql:prepare</xqdoc:name>
+            <xqdoc:signature>sql:prepare($handle as xs:long, $sql-statement as xs:string) as xs:long?</xqdoc:signature>
+            <xqdoc:comment>
+                <xqdoc:description>Prepares a SQL statement against a SQL db using the connection indicated by the connection handle.</xqdoc:description>
+                <xqdoc:param>$handle The connection handle</xqdoc:param>
+                <xqdoc:param>$sql-statement The SQL statement</xqdoc:param>
+                <xqdoc:return>xs:long? : an xs:long representing the statement handle</xqdoc:return>
+            </xqdoc:comment>
+        </xqdoc:function>
+    </xqdoc:functions>
+</xqdoc:xqdoc>

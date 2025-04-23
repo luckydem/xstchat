@@ -1,0 +1,24 @@
+<xqdoc:xqdoc xmlns:xqdoc="http://www.xqdoc.org/1.0">
+    <xqdoc:control>
+        <xqdoc:date>2025-04-10T20:48:27.37+02:00</xqdoc:date>
+        <xqdoc:location>java:org.exist.xquery.modules.simpleql.SimpleQLModule</xqdoc:location>
+    </xqdoc:control>
+    <xqdoc:module type="library">
+        <xqdoc:uri>http://exist-db.org/xquery/simple-ql</xqdoc:uri>
+        <xqdoc:name>simpleql</xqdoc:name>
+        <xqdoc:comment>
+            <xqdoc:description>A module for a simple query language parser</xqdoc:description>
+        </xqdoc:comment>
+    </xqdoc:module>
+    <xqdoc:functions>
+        <xqdoc:function>
+            <xqdoc:name>simpleql:parse-simpleql</xqdoc:name>
+            <xqdoc:signature>simpleql:parse-simpleql($expression as xs:string?) as xs:string?</xqdoc:signature>
+            <xqdoc:comment>
+                <xqdoc:description>Translates expressions in a simple query language to an XPath expression. A single search term is translated into '. &amp;= term', 'and'/'or' used to combine terms, quotes define a phrase and are translated into near(., 'quoted terms').</xqdoc:description>
+                <xqdoc:param>$expression? The expression to parse</xqdoc:param>
+                <xqdoc:return>xs:string? : the result</xqdoc:return>
+            </xqdoc:comment>
+        </xqdoc:function>
+    </xqdoc:functions>
+</xqdoc:xqdoc>

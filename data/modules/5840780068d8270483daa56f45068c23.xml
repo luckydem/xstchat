@@ -1,0 +1,46 @@
+<xqdoc:xqdoc xmlns:xqdoc="http://www.xqdoc.org/1.0">
+    <xqdoc:control>
+        <xqdoc:date>2025-04-10T20:48:27.37+02:00</xqdoc:date>
+        <xqdoc:location>java:org.exist.xquery.modules.persistentlogin.PersistentLoginModule</xqdoc:location>
+    </xqdoc:control>
+    <xqdoc:module type="library">
+        <xqdoc:uri>http://exist-db.org/xquery/persistentlogin</xqdoc:uri>
+        <xqdoc:name>plogin</xqdoc:name>
+        <xqdoc:comment>
+            <xqdoc:description>Persistent login module. Provides functions for implementing a 'remember me' login feature. Uses one-time tokens which are valid for a single request only.</xqdoc:description>
+        </xqdoc:comment>
+    </xqdoc:module>
+    <xqdoc:functions>
+        <xqdoc:function>
+            <xqdoc:name>plogin:register</xqdoc:name>
+            <xqdoc:signature>plogin:register($user as xs:string, $password as xs:string?, $timeToLive as xs:duration, $onLogin as function(*)?) as item()*</xqdoc:signature>
+            <xqdoc:comment>
+                <xqdoc:description>Try to log in the user and create a one-time login token. The token can be stored to a cookie and used to log in (via the login function) as the same user without providing credentials. However, for security reasons the token will be valid only for the next request to the login function and is deleted afterwards. If the user is valid and the token could be generated, the supplied callback function is called with 4 arguments: $token as xs:string, $user as xs:string, $password as xs:string, $timeToLive as xs:duration.</xqdoc:description>
+                <xqdoc:param>$user user name</xqdoc:param>
+                <xqdoc:param>$password? password</xqdoc:param>
+                <xqdoc:param>$timeToLive duration for which the user is remembered</xqdoc:param>
+                <xqdoc:param>$onLogin? callback function to be called when the login succeeds</xqdoc:param>
+                <xqdoc:return>item()* : result of the callback function or the empty sequence</xqdoc:return>
+            </xqdoc:comment>
+        </xqdoc:function>
+        <xqdoc:function>
+            <xqdoc:name>plogin:login</xqdoc:name>
+            <xqdoc:signature>plogin:login($token as xs:string, $onLogin as function(*)?) as item()*</xqdoc:signature>
+            <xqdoc:comment>
+                <xqdoc:description>Try to log in the user based on the supplied token. If the login succeeds, the provided callback function is called with 4 arguments: $token as xs:string, $user as xs:string, $password as xs:string, $timeToLive as duration. $token will be a new token which can be used for the next request. The old token is deleted.</xqdoc:description>
+                <xqdoc:param>$token a valid one-time token</xqdoc:param>
+                <xqdoc:param>$onLogin? callback function to be called when the login succeeds</xqdoc:param>
+                <xqdoc:return>item()* : result of the callback function or the empty sequence</xqdoc:return>
+            </xqdoc:comment>
+        </xqdoc:function>
+        <xqdoc:function>
+            <xqdoc:name>plogin:invalidate</xqdoc:name>
+            <xqdoc:signature>plogin:invalidate($token as xs:string) as empty-sequence()</xqdoc:signature>
+            <xqdoc:comment>
+                <xqdoc:description>Invalidate the supplied one-time token, so it can no longer be used to log in.</xqdoc:description>
+                <xqdoc:param>$token a valid one-time token</xqdoc:param>
+                <xqdoc:return>empty-sequence() : empty sequence</xqdoc:return>
+            </xqdoc:comment>
+        </xqdoc:function>
+    </xqdoc:functions>
+</xqdoc:xqdoc>

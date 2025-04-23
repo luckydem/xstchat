@@ -1,0 +1,35 @@
+<xqdoc:xqdoc xmlns:xqdoc="http://www.xqdoc.org/1.0">
+    <xqdoc:control>
+        <xqdoc:date>2025-04-10T20:48:27.37+02:00</xqdoc:date>
+        <xqdoc:location>java:org.exist.xquery.modules.xmldiff.XmlDiffModule</xqdoc:location>
+    </xqdoc:control>
+    <xqdoc:module type="library">
+        <xqdoc:uri>http://exist-db.org/xquery/xmldiff</xqdoc:uri>
+        <xqdoc:name>xmldiff</xqdoc:name>
+        <xqdoc:comment>
+            <xqdoc:description>A module for determining differences between XML documents and nodes.</xqdoc:description>
+        </xqdoc:comment>
+    </xqdoc:module>
+    <xqdoc:functions>
+        <xqdoc:function>
+            <xqdoc:name>xmldiff:compare</xqdoc:name>
+            <xqdoc:signature>xmldiff:compare($node-set-1 as node()*, $node-set-2 as node()*) as xs:boolean</xqdoc:signature>
+            <xqdoc:comment>
+                <xqdoc:description>Compares two nodes sets to determine their equivalence.Equivalence is determined in 3 stages, first by sequence length, then equivalent Node types, and finally by XMLUnit Diff.</xqdoc:description>
+                <xqdoc:param>$node-set-1* The first node set.</xqdoc:param>
+                <xqdoc:param>$node-set-2* The second node set.</xqdoc:param>
+                <xqdoc:return>xs:boolean : Returns true if the node sets $node-set-1 and $node-set-2 are equal, false otherwise. This function is a simplified version of: xmldiff:diff#2 that only returns true or false.</xqdoc:return>
+            </xqdoc:comment>
+        </xqdoc:function>
+        <xqdoc:function>
+            <xqdoc:name>xmldiff:diff</xqdoc:name>
+            <xqdoc:signature>xmldiff:diff($node-set-1 as node()*, $node-set-2 as node()*) as map(*)</xqdoc:signature>
+            <xqdoc:comment>
+                <xqdoc:description>Reports on the differences between two nodes sets to determine their equality.Equality is determined in 3 stages, first by sequence length, then equivalent Node types, and finally by XMLUnit Diff for Document and Element nodes, or fn:deep-equals for all other node types.</xqdoc:description>
+                <xqdoc:param>$node-set-1* The first node set.</xqdoc:param>
+                <xqdoc:param>$node-set-2* The second node set.</xqdoc:param>
+                <xqdoc:return>map(*) : Returns a map(xs:string, xs:anyAtomicType). When the node sets are equivalent the map is: map {'equivalent': fn:true() }. When the nodesets are not equivalent, the map is structured like: map {'equivalent': fn:false(), 'position': xs:integer, 'message': xs:string}.</xqdoc:return>
+            </xqdoc:comment>
+        </xqdoc:function>
+    </xqdoc:functions>
+</xqdoc:xqdoc>
